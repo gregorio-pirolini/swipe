@@ -46,3 +46,16 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+.swipeMich {
+  touch-action: pan-y pinch-zoom;   /* allows vertical scroll + zoom, blocks horizontal */
+  /* or: touch-action: manipulation;  ← if you want very fast response */
+}
+
+.swipeMich img {
+  display: block;
+  width: 100%;
+  height: auto;
+  user-select: none;
+  -webkit-user-drag: none;
+}
