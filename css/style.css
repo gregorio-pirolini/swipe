@@ -59,3 +59,11 @@ img {
   user-select: none;
   -webkit-user-drag: none;
 }
+/* ipad fixing */
+button#test,
+  .swipeMich,
+  .picture {
+    cursor: pointer !important;          /* Critical for old Safari/Android to enable click simulation */
+    touch-action: manipulation;          /* Removes 300 ms delay + improves tap response */
+    -webkit-tap-highlight-color: transparent;  /* No blue highlight on old Android */
+  }
