@@ -1,0 +1,48 @@
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+ 
+}
+ h1 {
+ 
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  
+  letter-spacing: 0.08em;
+ 
+  margin-bottom: 1rem;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+ 
+ .left, .right {
+    width: 100%;
+    
+  }
+
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (min-width: 801px) {
+  .left, .right {
+    width: 50%;
+    float: left;
+  }
+   .right {
+    width: 45%;
+    float: left;
+    margin-left: 1em;
+  }
+}
+
+/* Responsive images */
+img {
+    max-width: 100%;
+    height: auto;
+}

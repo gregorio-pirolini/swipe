@@ -4,11 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>swipe</title>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+ <link
+      href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="js/swipe.js"></script>
 </head>
 <body>
+
+<main class="container">
+ 
+<h1>Swipe</h1>
+   
+<p>Es handelt sich um eine einfache swipe Funktion für <strong>Mobiles</strong> &amp; <strong>IPads</strong>.</p>
+<p>Swipe über das Bild um es zu tauschen und die verschiedenen werte zu berechnen. </p>
+<button id="test">test change pix</button>
+<div class="content">
+<div class="right"> 
+<figure class="wp-block-image size-full swipeMich">
+    <img 
+          src="img/yellow.png"
+          alt="yellow image"
+          width="1024" 
+          height="1024"
+          srcset="
+            img/yellow.png 1024w,
+            img/yellow-768x768.png 768w,
+            img/yellow-300x300.png 300w,
+            img/yellow-150x150.png 150w
+          "
+          sizes="(max-width: 1024px) 100vw, 1024px"
+          loading="lazy"
+        class="wp-image-341"/>
+
     
+    
+</figure>
+<!-- /right --></div>
+<div class="left"><!-- left -->
+
+
+<p>Swipe Start: <span id="swipeStart"></span></p>
+
+<p>Swipe End: <span id="swipeEnd"></span></p>
+
+<p>Swipe Time: <span id="swipeTime"></span></p>
+
+<p>x Touch Start Pos: <span id="xTouchstartPos"></span></p>
+
+<p>x Touch End Pos: <span id="xTouchendPos"></span></p>
+
+<p>y Touch Start Pos: <span id="yTouchstartPos"></span></p>
+
+<p>y Touch End Pos: <span id="yTouchEndPos"></span></p>
+
+<p>xDiff: <span id="xDiff"></span></p>
+
+<p>yDiff: <span id="yDiff"></span></p>
+
+<p>Swipe Richtung: <span id="swipeRichtung"></span></p>
+<!-- left--></div>
+</div><!-- content-->
+<!-- main--></main>
 </body>
 </html>
